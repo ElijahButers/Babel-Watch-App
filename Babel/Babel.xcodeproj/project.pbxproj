@@ -14,7 +14,56 @@
 		40CE9B011B69B49900278D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CE9AFF1B69B49900278D71 /* LaunchScreen.storyboard */; };
 		40D189A01B6E259E001C81A7 /* BabelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D1899F1B6E259E001C81A7 /* BabelData.swift */; };
 		40EA628B1BB27BA2001D57A7 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA628A1BB27BA2001D57A7 /* AnswerCell.swift */; };
+		E22B93051F730A9E005CDE0E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22B93031F730A9E005CDE0E /* Interface.storyboard */; };
+		E22B93071F730A9E005CDE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22B93061F730A9E005CDE0E /* Assets.xcassets */; };
+		E22B930E1F730A9E005CDE0E /* Babel Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E22B930D1F730A9E005CDE0E /* Babel Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E22B93131F730A9E005CDE0E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B93121F730A9E005CDE0E /* InterfaceController.swift */; };
+		E22B93151F730A9E005CDE0E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B93141F730A9E005CDE0E /* ExtensionDelegate.swift */; };
+		E22B93171F730A9E005CDE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22B93161F730A9E005CDE0E /* Assets.xcassets */; };
+		E22B931B1F730A9E005CDE0E /* Babel Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E22B93011F730A9E005CDE0E /* Babel Watch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22B930F1F730A9E005CDE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CE9AEB1B69B49900278D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22B930C1F730A9E005CDE0E;
+			remoteInfo = "Babel Watch Extension";
+		};
+		E22B93191F730A9E005CDE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CE9AEB1B69B49900278D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22B93001F730A9E005CDE0E;
+			remoteInfo = "Babel Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E22B931F1F730A9E005CDE0E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E22B930E1F730A9E005CDE0E /* Babel Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B93231F730A9E005CDE0E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E22B931B1F730A9E005CDE0E /* Babel Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40CE9AF31B69B49900278D71 /* Babel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +75,26 @@
 		40CE9B021B69B49900278D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40D1899F1B6E259E001C81A7 /* BabelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabelData.swift; sourceTree = "<group>"; };
 		40EA628A1BB27BA2001D57A7 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		E22B93011F730A9E005CDE0E /* Babel Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Babel Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22B93041F730A9E005CDE0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E22B93061F730A9E005CDE0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E22B93081F730A9E005CDE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22B930D1F730A9E005CDE0E /* Babel Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Babel Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22B93121F730A9E005CDE0E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E22B93141F730A9E005CDE0E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E22B93161F730A9E005CDE0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E22B93181F730A9E005CDE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		40CE9AF01B69B49900278D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B930A1F730A9E005CDE0E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				40CE9AF51B69B49900278D71 /* Babel */,
+				E22B93021F730A9E005CDE0E /* Babel Watch */,
+				E22B93111F730A9E005CDE0E /* Babel Watch Extension */,
 				40CE9AF41B69B49900278D71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				40CE9AF31B69B49900278D71 /* Babel.app */,
+				E22B93011F730A9E005CDE0E /* Babel Watch.app */,
+				E22B930D1F730A9E005CDE0E /* Babel Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +139,27 @@
 			path = Babel;
 			sourceTree = "<group>";
 		};
+		E22B93021F730A9E005CDE0E /* Babel Watch */ = {
+			isa = PBXGroup;
+			children = (
+				E22B93031F730A9E005CDE0E /* Interface.storyboard */,
+				E22B93061F730A9E005CDE0E /* Assets.xcassets */,
+				E22B93081F730A9E005CDE0E /* Info.plist */,
+			);
+			path = "Babel Watch";
+			sourceTree = "<group>";
+		};
+		E22B93111F730A9E005CDE0E /* Babel Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E22B93121F730A9E005CDE0E /* InterfaceController.swift */,
+				E22B93141F730A9E005CDE0E /* ExtensionDelegate.swift */,
+				E22B93161F730A9E005CDE0E /* Assets.xcassets */,
+				E22B93181F730A9E005CDE0E /* Info.plist */,
+			);
+			path = "Babel Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +170,51 @@
 				40CE9AEF1B69B49900278D71 /* Sources */,
 				40CE9AF01B69B49900278D71 /* Frameworks */,
 				40CE9AF11B69B49900278D71 /* Resources */,
+				E22B93231F730A9E005CDE0E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E22B931A1F730A9E005CDE0E /* PBXTargetDependency */,
 			);
 			name = Babel;
 			productName = Babel;
 			productReference = 40CE9AF31B69B49900278D71 /* Babel.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E22B93001F730A9E005CDE0E /* Babel Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22B93201F730A9E005CDE0E /* Build configuration list for PBXNativeTarget "Babel Watch" */;
+			buildPhases = (
+				E22B92FF1F730A9E005CDE0E /* Resources */,
+				E22B931F1F730A9E005CDE0E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22B93101F730A9E005CDE0E /* PBXTargetDependency */,
+			);
+			name = "Babel Watch";
+			productName = "Babel Watch";
+			productReference = E22B93011F730A9E005CDE0E /* Babel Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E22B930C1F730A9E005CDE0E /* Babel Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22B931C1F730A9E005CDE0E /* Build configuration list for PBXNativeTarget "Babel Watch Extension" */;
+			buildPhases = (
+				E22B93091F730A9E005CDE0E /* Sources */,
+				E22B930A1F730A9E005CDE0E /* Frameworks */,
+				E22B930B1F730A9E005CDE0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Babel Watch Extension";
+			productName = "Babel Watch Extension";
+			productReference = E22B930D1F730A9E005CDE0E /* Babel Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,12 +222,22 @@
 		40CE9AEB1B69B49900278D71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Razeware LLC";
 				TargetAttributes = {
 					40CE9AF21B69B49900278D71 = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0800;
+					};
+					E22B93001F730A9E005CDE0E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E22B930C1F730A9E005CDE0E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DG9E3T36HM;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -119,6 +255,8 @@
 			projectRoot = "";
 			targets = (
 				40CE9AF21B69B49900278D71 /* Babel */,
+				E22B93001F730A9E005CDE0E /* Babel Watch */,
+				E22B930C1F730A9E005CDE0E /* Babel Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +269,23 @@
 				40CE9B011B69B49900278D71 /* LaunchScreen.storyboard in Resources */,
 				40CE9AFE1B69B49900278D71 /* Assets.xcassets in Resources */,
 				40CE9AFC1B69B49900278D71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B92FF1F730A9E005CDE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B93071F730A9E005CDE0E /* Assets.xcassets in Resources */,
+				E22B93051F730A9E005CDE0E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B930B1F730A9E005CDE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B93171F730A9E005CDE0E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +303,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E22B93091F730A9E005CDE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B93151F730A9E005CDE0E /* ExtensionDelegate.swift in Sources */,
+				E22B93131F730A9E005CDE0E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22B93101F730A9E005CDE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22B930C1F730A9E005CDE0E /* Babel Watch Extension */;
+			targetProxy = E22B930F1F730A9E005CDE0E /* PBXContainerItemProxy */;
+		};
+		E22B931A1F730A9E005CDE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22B93001F730A9E005CDE0E /* Babel Watch */;
+			targetProxy = E22B93191F730A9E005CDE0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40CE9AFA1B69B49900278D71 /* Main.storyboard */ = {
@@ -165,6 +342,14 @@
 				40CE9B001B69B49900278D71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E22B93031F730A9E005CDE0E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22B93041F730A9E005CDE0E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +467,88 @@
 			};
 			name = Release;
 		};
+		E22B931D1F730A9E005CDE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = DG9E3T36HM;
+				INFOPLIST_FILE = "Babel Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Babel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		E22B931E1F730A9E005CDE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = DG9E3T36HM;
+				INFOPLIST_FILE = "Babel Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Babel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		E22B93211F730A9E005CDE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Babel_Watch_Extension;
+				INFOPLIST_FILE = "Babel Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Babel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		E22B93221F730A9E005CDE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Babel_Watch_Extension;
+				INFOPLIST_FILE = "Babel Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Babel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -302,6 +569,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E22B931C1F730A9E005CDE0E /* Build configuration list for PBXNativeTarget "Babel Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22B931D1F730A9E005CDE0E /* Debug */,
+				E22B931E1F730A9E005CDE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E22B93201F730A9E005CDE0E /* Build configuration list for PBXNativeTarget "Babel Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22B93211F730A9E005CDE0E /* Debug */,
+				E22B93221F730A9E005CDE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
