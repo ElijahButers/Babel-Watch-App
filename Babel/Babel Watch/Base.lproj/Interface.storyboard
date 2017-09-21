@@ -14,7 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Babel_Watch" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="center" verticalAlignment="center" backgroundImage="bubble" contentMode="top" layout="vertical" id="2rV-vS-4NI"/>
+                        <group width="1" alignment="center" verticalAlignment="center" backgroundImage="bubble" contentMode="top" layout="vertical" id="2rV-vS-4NI">
+                            <items>
+                                <label alignment="center" text="Question" textAlignment="center" numberOfLines="4" id="pPs-oW-s80">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
