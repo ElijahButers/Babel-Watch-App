@@ -26,6 +26,10 @@
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="answerPicker" destination="knE-U1-wuZ" id="rhg-bc-gAE"/>
+                        <outlet property="questionLabel" destination="pPs-oW-s80" id="fJO-UA-ZVr"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
