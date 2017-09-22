@@ -19,11 +19,18 @@
                                 <label alignment="center" text="Question" textAlignment="center" numberOfLines="4" id="pPs-oW-s80">
                                     <fontDescription key="font" type="system" pointSize="14"/>
                                 </label>
-                                <picker width="50" height="50" alignment="center" focusStyle="stack" id="knE-U1-wuZ"/>
+                                <picker width="50" height="50" alignment="center" focusStyle="stack" id="knE-U1-wuZ">
+                                    <connections>
+                                        <action selector="pickerValueChanged:" destination="AgC-eL-Hgc" id="YqH-3r-IIK"/>
+                                    </connections>
+                                </picker>
                             </items>
                         </group>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Submit" id="yos-Gj-HLp">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                            <connections>
+                                <action selector="checkAnswer" destination="AgC-eL-Hgc" id="hpF-SJ-pUO"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>

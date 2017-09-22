@@ -21,6 +21,12 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
     
+    @IBAction func pickerValueChanged(_ value: Int) {
+    }
+    @IBAction func checkAnswer() {
+    }
+    
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
