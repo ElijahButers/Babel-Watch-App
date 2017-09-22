@@ -22,6 +22,9 @@
                                 <picker width="50" height="50" alignment="center" focusStyle="stack" id="knE-U1-wuZ"/>
                             </items>
                         </group>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Submit" id="yos-Gj-HLp">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </button>
                     </items>
                 </controller>
             </objects>
