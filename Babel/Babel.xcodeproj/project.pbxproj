@@ -21,6 +21,7 @@
 		E22B93151F730A9E005CDE0E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B93141F730A9E005CDE0E /* ExtensionDelegate.swift */; };
 		E22B93171F730A9E005CDE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22B93161F730A9E005CDE0E /* Assets.xcassets */; };
 		E22B931B1F730A9E005CDE0E /* Babel Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E22B93011F730A9E005CDE0E /* Babel Watch.app */; };
+		E2577B321F76F9B900A79142 /* BabelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D1899F1B6E259E001C81A7 /* BabelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2577B321F76F9B900A79142 /* BabelData.swift in Sources */,
 				E22B93151F730A9E005CDE0E /* ExtensionDelegate.swift in Sources */,
 				E22B93131F730A9E005CDE0E /* InterfaceController.swift in Sources */,
 			);
