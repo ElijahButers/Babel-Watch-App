@@ -108,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				40CE9AF51B69B49900278D71 /* Babel */,
+				E2577B311F76EDA600A79142 /* Shared */,
 				E22B93021F730A9E005CDE0E /* Babel Watch */,
 				E22B93111F730A9E005CDE0E /* Babel Watch Extension */,
 				40CE9AF41B69B49900278D71 /* Products */,
@@ -128,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				40CE9AF61B69B49900278D71 /* AppDelegate.swift */,
-				40D1899F1B6E259E001C81A7 /* BabelData.swift */,
 				40CE9AF81B69B49900278D71 /* ViewController.swift */,
 				40EA628A1BB27BA2001D57A7 /* AnswerCell.swift */,
 				40CE9AFA1B69B49900278D71 /* Main.storyboard */,
@@ -158,6 +158,15 @@
 				E22B93181F730A9E005CDE0E /* Info.plist */,
 			);
 			path = "Babel Watch Extension";
+			sourceTree = "<group>";
+		};
+		E2577B311F76EDA600A79142 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				40D1899F1B6E259E001C81A7 /* BabelData.swift */,
+			);
+			name = Shared;
+			path = Babel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +586,7 @@
 				E22B931E1F730A9E005CDE0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E22B93201F730A9E005CDE0E /* Build configuration list for PBXNativeTarget "Babel Watch" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +595,7 @@
 				E22B93221F730A9E005CDE0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
