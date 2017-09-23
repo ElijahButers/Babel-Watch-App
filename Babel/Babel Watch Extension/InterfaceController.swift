@@ -15,6 +15,9 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var questionLabel: WKInterfaceLabel!
     @IBOutlet var answerPicker: WKInterfacePicker!
     
+    var data = BabelData()
+    var questionNumber = 0
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
