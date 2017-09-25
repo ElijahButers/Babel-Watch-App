@@ -24,6 +24,24 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
     
+    func pickQusetion(from questions: [String]) {
+        questionNumber = questions.count.random()
+        questionLabel.setText(questions[questionNumber])
+    }
+    
+    func showQuestion() {
+        if let questionType = QuestionType(rawValue: QuestionType.count.random()) {
+            switch questionType {
+            case .number:
+                pickQusetion(from: data.numberQuestions)
+            case .color:
+                pickQusetion(from: data.colorQuestions)
+            case .emoji:
+                pickQusetion(from: data.emojiQuestions)
+            }
+        }
+    }
+    
     @IBAction func pickerValueChanged(_ value: Int) {
     }
     @IBAction func checkAnswer() {
