@@ -22,6 +22,7 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        showQuestion()
     }
     
     func pickQusetion(from questions: [String]) {
