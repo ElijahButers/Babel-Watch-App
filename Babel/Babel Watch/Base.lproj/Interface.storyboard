@@ -18,6 +18,12 @@
                             <items>
                                 <label alignment="center" text="Question" textAlignment="center" numberOfLines="4" id="pPs-oW-s80">
                                     <fontDescription key="font" type="system" pointSize="14"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </variation>
                                 </label>
                                 <picker width="50" height="50" alignment="center" focusStyle="stack" id="knE-U1-wuZ">
                                     <connections>
