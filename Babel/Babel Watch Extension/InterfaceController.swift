@@ -46,5 +46,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func pickerValueChanged(_ value: Int) {
     }
     @IBAction func checkAnswer() {
+        
+        showQuestion()
     }
 }
