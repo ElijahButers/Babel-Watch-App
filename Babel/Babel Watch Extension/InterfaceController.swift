@@ -43,6 +43,10 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    private func pickerItems(fromTitles titles: [String]) -> [WKPickerItem] {
+        
+    }
+    
     @IBAction func pickerValueChanged(_ value: Int) {
     }
     @IBAction func checkAnswer() {
