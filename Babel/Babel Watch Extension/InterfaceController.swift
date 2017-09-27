@@ -45,6 +45,12 @@ class InterfaceController: WKInterfaceController {
     
     private func pickerItems(fromTitles titles: [String]) -> [WKPickerItem] {
         
+        let items = titles.map {(title: String) -> WKPickerItem in
+            let pickerItem = WKPickerItem()
+            pickerItem.title = title
+            return pickerItem
+        }
+        return items
     }
     
     @IBAction func pickerValueChanged(_ value: Int) {
