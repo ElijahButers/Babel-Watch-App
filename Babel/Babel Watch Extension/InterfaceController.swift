@@ -53,6 +53,11 @@ class InterfaceController: WKInterfaceController {
         return items
     }
     
+    private func pickerItems(fromImageNames imageNames: [String]) -> [WKPickerItem] {
+    
+    }
+    
+    
     @IBAction func pickerValueChanged(_ value: Int) {
     }
     @IBAction func checkAnswer() {
