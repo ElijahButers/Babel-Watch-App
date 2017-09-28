@@ -54,7 +54,13 @@ class InterfaceController: WKInterfaceController {
     }
     
     private func pickerItems(fromImageNames imageNames: [String]) -> [WKPickerItem] {
-    
+        
+        let items = imageNames.map {(name: String) -> WKPickerItem in
+            let pickerItem = WKPickerItem()
+            pickerItem.contentImage = WKImage(imageName: name)
+            return pickerItem
+        }
+        return items
     }
     
     
