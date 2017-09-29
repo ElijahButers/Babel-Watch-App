@@ -63,6 +63,18 @@ class InterfaceController: WKInterfaceController {
         return items
     }
     
+    func pickerItems(with questionType: QuestionType) -> [WKPickerItem] {
+        
+        switch questionType {
+        case .number:
+            return pickerItems(fromTitles: data.numberAnswers)
+        case .emoji:
+            return pickerItems(fromTitles: data.emojiAnswers)
+        case .color:
+            return pickerItems(fromTitles: data.colorAnswers)
+        }
+    }
+    
     
     @IBAction func pickerValueChanged(_ value: Int) {
     }
