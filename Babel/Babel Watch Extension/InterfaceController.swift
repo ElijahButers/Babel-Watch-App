@@ -30,6 +30,10 @@ class InterfaceController: WKInterfaceController {
         showQuestion()
     }
     
+    override func didAppear() {
+        answerPicker.setSelectedItemIndex(0)
+    }
+    
     func pickQuestion(from questions: [String]) {
         questionNumber = questions.count.random()
         questionLabel.setText(questions[questionNumber])
