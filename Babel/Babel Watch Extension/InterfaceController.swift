@@ -30,7 +30,7 @@ class InterfaceController: WKInterfaceController {
         showQuestion()
     }
     
-    func pickQusetion(from questions: [String]) {
+    func pickQuestion(from questions: [String]) {
         questionNumber = questions.count.random()
         questionLabel.setText(questions[questionNumber])
     }
@@ -39,13 +39,13 @@ class InterfaceController: WKInterfaceController {
         if let questionType = QuestionType(rawValue: QuestionType.count.random()) {
             switch questionType {
             case .number:
-                pickQusetion(from: data.numberQuestions)
+                pickQuestion(from: data.numberQuestions)
                 answerPicker.setItems(numberItems)
             case .color:
-                pickQusetion(from: data.colorQuestions)
+                pickQuestion(from: data.colorQuestions)
                 answerPicker.setItems(colorItems)
             case .emoji:
-                pickQusetion(from: data.emojiQuestions)
+                pickQuestion(from: data.emojiQuestions)
                 answerPicker.setItems(emojiItems)
             }
         }
