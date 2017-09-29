@@ -40,10 +40,13 @@ class InterfaceController: WKInterfaceController {
             switch questionType {
             case .number:
                 pickQusetion(from: data.numberQuestions)
+                answerPicker.setItems(numberItems)
             case .color:
                 pickQusetion(from: data.colorQuestions)
+                answerPicker.setItems(colorItems)
             case .emoji:
                 pickQusetion(from: data.emojiQuestions)
+                answerPicker.setItems(emojiItems)
             }
         }
     }
