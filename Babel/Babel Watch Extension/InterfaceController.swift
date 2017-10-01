@@ -90,6 +90,8 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func pickerValueChanged(_ value: Int) {
+        
+        answerValue = value
     }
     @IBAction func checkAnswer() {
         
