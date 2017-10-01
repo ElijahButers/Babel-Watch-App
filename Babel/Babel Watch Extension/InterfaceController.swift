@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController {
     
     var data = BabelData()
     var questionNumber = 0
+    var answerValue = 0
     
     lazy var numberItems: [WKPickerItem] = self.pickerItems(with: .number)
     lazy var emojiItems: [WKPickerItem] = self.pickerItems(with: .emoji)
