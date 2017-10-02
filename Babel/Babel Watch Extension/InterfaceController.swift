@@ -95,9 +95,14 @@ class InterfaceController: WKInterfaceController {
     }
     @IBAction func checkAnswer() {
         
-        let action = WKAlertAction(title: "Ok", style: .default) { () in }
+        let okAction = WKAlertAction(title: "Ok", style: .default) { () in }
         if answerValue == questionNumber + 1 {
-            
+            WKInterfaceDevice.current().play(.success)
+            presentAlert(withTitle: "Correct!", message: "New question...", preferredStyle: .alert, actions: [okAction])
+            showQuestion()
+        } else {
+            WKInterfaceDevice.current().play(.retry)
+            presentAlert(withTitle: "Sorry!", message: "Try again", preferredStyle: .alert, actions: [okAction])
         }
     }
 }
