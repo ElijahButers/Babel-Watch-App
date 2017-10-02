@@ -95,6 +95,9 @@ class InterfaceController: WKInterfaceController {
     }
     @IBAction func checkAnswer() {
         
-        showQuestion()
+        let action = WKAlertAction(title: "Ok", style: .default) { () in }
+        if answerValue == questionNumber + 1 {
+            
+        }
     }
 }
