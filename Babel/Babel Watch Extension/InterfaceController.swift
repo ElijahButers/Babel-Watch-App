@@ -88,6 +88,10 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    override func pickerDidSettle(_ picker: WKInterfacePicker) {
+        
+    }
+    
     
     @IBAction func pickerValueChanged(_ value: Int) {
         
