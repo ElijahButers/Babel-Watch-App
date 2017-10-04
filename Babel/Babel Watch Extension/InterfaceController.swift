@@ -89,7 +89,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func pickerDidSettle(_ picker: WKInterfacePicker) {
-        
+        checkAnswer()
     }
     
     
