@@ -89,6 +89,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func pickerDidSettle(_ picker: WKInterfacePicker) {
+        
+        guard answerValue > 0 else {
+            return
+        }
+        
         checkAnswer()
     }
     
